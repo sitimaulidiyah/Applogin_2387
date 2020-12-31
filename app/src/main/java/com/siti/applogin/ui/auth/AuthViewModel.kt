@@ -16,7 +16,9 @@ class AuthViewModel(val repo: AuthRepository) : ViewModel() {
     val authLogout = MutableLiveData<ActionState<Boolean>>()
 
     val email = MutableLiveData<String>()
-    val password = MutableLiveData<String>()
+    val password
+
+    = MutableLiveData<String>()
     val fullName = MutableLiveData<String>()
 
     fun login() {
